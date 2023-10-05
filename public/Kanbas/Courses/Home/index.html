@@ -21,9 +21,9 @@
       </li>
       <li class="list-group-item">
         <i class="fas fa-stack fa-tachometer-alt"></i>
-        <a href="#">Dashboard</a>
+        <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
       </li>
-      <li class="list-group-item">
+      <li class="list-group-item active">
         <i class="fas fa-stack fa-book"></i>
         <a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a>
       </li>
@@ -58,17 +58,20 @@
     </ul>
    </div>
 
-      
-
-
-        <div class="col-2 text-danger">
-        <p class="wd-fg-color-red"> <i class="fas fa-bars"></i>
-          CS4450.12631.202410
-          <span class="wd-fg-color-black"> > Modules</span>
-        </p>
+      <div class="col">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS4450.12631.202410</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
         <hr style="color: black">
-       <ul class="list-group">
-        <li class="list-group-item">
+      </div>
+
+      <div class="row">
+       <div class="col">
+        <ul class="list-group">
+        <li class="list-group-item active">
           <a href="/Kanbas/Courses/Home/index.html">Home</a>
         </li>
         <li class="list-group-item">
@@ -139,38 +142,32 @@
         <button>+ Module</button>
 
         <hr />
-
-        <ul>
-          <li>
-            <h2>Week 0 - INTRO</h2>
-            <ul>
-              <li>LEARNING OBJECTIVES</li>
-              <ul>
-                <li>Introduction to the course</li>
-                <li>Learn what is Web Development</li>
-                <li>Creating a development environment</li>
-                <li>Creating a Web Application</li>
-                <li>Getting started with the 1st assignment</li>
-              </ul>
-              <li>READING</li>
-              <ul>
-                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                <li>Full Stack Developer - Chapter 2 - Creating User
-                  Interfaces with HTML
-                </li>
-              </ul>
+        <ul class="list-group">
+            <li class="list-group-item bg-light">Week 0 - INTRO</li>
+            <li class="list-group-item">LEARNING OBJECTIVES</li>
+            <li class="list-group-item indented">Introduction to the course</li>
+            <li class="list-group-item">Learn what is Web Development</li>
+            <li class="list-group-item">Creating a development environment</li>
+            <li class="list-group-item">Creating a Web Application</li>
+            <li class="list-group-item">Getting started with the 1st assignment</li>
+            <li class="list-group-item">READING</li>
+              
+                <li class="list-group-item">Full Stack Developer - Chapter 1 - Introduction</li>
+                <li class="list-group-item">Full Stack Developer - Chapter 2 - Creating User
+                  Interfaces with HTML </li>
+             
                 
-              <li>SLIDES</li>
-              <ul>
-                <li><a href="#">Introduction to Web Development Links to 
+              <li class="list-group-item">SLIDES</li>
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#">Introduction to Web Development Links to 
                   an external site.</a></li>
-                  <li><a href="#">Creating an HTTP server with Node.js Links
+                  <li class="list-group-item"><a href="#">Creating an HTTP server with Node.js Links
                     to an external site.</a></li>
-                    <li><a href="#">Creating a React Application Links to an
+                    <li class="list-group-item"><a href="#">Creating a React Application Links to an
                       external site.</a></li>
               </ul>
-            </ul>
-          </li>
+            
+          
 
           <li>
             <h2>Week 1 - HTML</h2>
@@ -192,7 +189,6 @@
             </ul>
           </li>
         </ul>
-
         <hr />
       </div>
      
@@ -219,6 +215,7 @@
       </div>
     </div>
     </div>
+  </div>
       
 
 

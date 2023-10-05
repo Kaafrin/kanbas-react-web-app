@@ -22,11 +22,11 @@
             </li>
             <li class="list-group-item">
               <i class="fas fa-stack fa-tachometer-alt"></i>
-              <a href="#">Dashboard</a>
+              <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
             </li>
             <li class="list-group-item">
               <i class="fas fa-stack fa-book"></i>
-              <a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a>
+              <a href="/Kanbas/Courses/Home/index.html">Courses</a>
             </li>
             <li class="list-group-item">
               <i class="fas fa-stack fa-calendar-alt"></i>
@@ -101,18 +101,28 @@
         <i class="fas fa-user-circle" style="color:lightgray"></i>
       </div>
         <h2>Jose Annunziato</h2>
-        Name:*
-        <input placeholder="">
-        Pronouns:
-        <select>
-          <option>
-            None
-          </option>
-        </select>
-    
 
-        Title:
-        <input placeholder="">
+        <div class="name">
+          <label for="name-input" class="form-label">Name: * </label>
+          <input type="fullname" class="form-control" id="name-input" placeholder="Jose Annunziato">
+        </div>
+        
+        <label for="floatingSelect">Pronouns:</label>
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelect" aria-label="pronoun label select">
+            <option selected>None</option>
+            <option value="1">She/Her/Hers</option>
+            <option value="2">He/Him/His</option>
+            <option value="3">They/Them/Theirs</option>
+            <option value="3">Other</option>
+          </select>
+        </div>
+        
+        <div class="title">
+          <label for="title-input" class="form-label">Title: </label>
+          <input type="title-name" class="form-control" id="title-input" placeholder="">
+        </div>
+        
         
        
         <h3>Contact</h3>
@@ -123,13 +133,20 @@
          <textarea cols="50" rows="3">Faculty, Software Engineer, AI, Space, and renewable enthusiast.
          </textarea>
          
-         <h3>Links</h3>
-         <h4>Title URL</h4>
-         <input placeholder=""> -> <input placeholder=""> 
-         
+         <div class="row">
+         <div class="col">
+         <h4>Links</h4>
+         <input placeholder=""> <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="col">
+          <h4>URL</h4>
+          <input placeholder="https://www.youtube.com"> <i class="fas fa-times" style="color: red"></i>
+        </div>
+      </div>
+
          <div class="row-2">
           <div class="col-6">
-         <button>Add another link</button>
+            <a class="btn btn-light" href="/Kanbas/Account/Profile/screen.html" role="button">Add Another Link</a>
          
           <a class="btn btn-light" href="/Kanbas/Account/Profile/screen.html" role="button">Cancel</a>
           <a type="button" class="btn btn-danger" href="/Kanbas/Account/Profile/screen.html" role-="button">Save Profile</a>

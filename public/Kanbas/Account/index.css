@@ -9,8 +9,6 @@
 
   .wd-account-navigation {
     width: 190px;
-   
-    
   }
 
   ul.wd-kanbas-navigation .list-group-item {
@@ -23,6 +21,12 @@
 ul.wd-kanbas-navigation .list-group-item i {
     color: red;
 }
+
+ul.wd-kanbas-navigation .list-group-item.active {
+    background-color: white;
+    border: none;
+    
+  }
   
   
   ul.wd-kanbas-navigation a {

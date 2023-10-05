@@ -18,18 +18,20 @@ ul.wd-kanbas-navigation .list-group-item i {
     color: red;
 }
   
-  ul.wd-kanbas-navigation .list-group-item.active {
-    background-color: white;
-    border: none;
-  }
-  
   ul.wd-kanbas-navigation a {
     color: white;
     text-decoration: none;
   }
   
+  ul.wd-kanbas-navigation .list-group-item.active {
+    background-color: white;
+    border: none;
+    
+  }
+
   ul.wd-kanbas-navigation .list-group-item.active a {
     color: red;
+    background-color: white;
     text-decoration: none;
   }
 
@@ -60,6 +62,7 @@ ul.wd-kanbas-navigation .list-group-item i {
     border: none;
 }
 
+
 .container {
   margin-left: 0;
   padding-left: 0;
@@ -68,4 +71,15 @@ ul.wd-kanbas-navigation .list-group-item i {
 .fa-eye-slash {
   color: gray;
   float:right;
+}
+
+.list-group-item.active {
+  border-left: 1px black solid;
+  border-radius: 0;
+  background-color: white;
+  
+}
+
+.list-group-item.active a {
+  color: black;
 }
