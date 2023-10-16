@@ -83,3 +83,45 @@ ul.wd-kanbas-navigation .list-group-item i {
 .list-group-item.active a {
   color: black;
 }
+
+hr {
+  color: black;
+  padding: 5px;
+
+}
+
+ul.classmodule .list-group-item{
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+ul.coursestatus .list-group-item a{
+  color: black;
+}
+
+ul.assignmentlist .list-group-item {
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+ul.assignmentlist .list-group-item a{
+  color: black;
+}
+
+ul.assignmentlist .list-group-item p{
+  margin: 0;
+  padding: 0;
+  color:dimgray;
+  font-size: 14;
+}
+
+.addbtn {
+  margin-left: 70px;
+  width: 340px;
+}

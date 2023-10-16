@@ -12,9 +12,7 @@
   <div class="container">
     <div class="row">
       <div class="col-1">
-      
-    
-        <ul class="wd-kanbas-navigation list-group  ">
+        <ul class="wd-kanbas-navigation list-group">
           <li class="list-group-item">
            <i class="fab fa-neos"></i>
           </li>
@@ -59,14 +57,22 @@
           </div>
           </li>
         </ul>
-
       </div>
 
 
+      <div class="col-11">
+        <div class="row">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fas fa-bars"></i> CS4450.12631.202410</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Grades</li>
+            </ol>
+          </nav>
+          <hr>
+        </div>
 
+        <div class="row">
       <div class="col-3 text-danger">
-
-      
         <ul class="list-group">
           <li class="list-group-item">
             <a href="/Kanbas/Courses/Home/index.html">Home</a>
@@ -125,31 +131,34 @@
         </ul>
       </div>
       
-
-
       <div class="col">
-        <select>
-            <option>Gradebook</option>
-        </select>
-        <button>Import</button>
-        <select>
-            <option>Export</option>
-        </select>
-        <button>Configure</button>
 
-        <h3>Student Names</h3>
-        <input
-          type="text"
-          placeholder="Search Student"
-          title="Type the usernames of students you want to filter"
-        />
-        <h3>Assignment Names</h3>
-        <input type="text" />
-        <br />
-        <br />
-        <button>Apply Filters</button>
-        <br />
-        <br />
+        <button type="button" class="btn border btn-secondary float-end"><i class="fas fa-cog"></i> </button>
+        <button type="button" class="btn border btn-secondary float-end"><i class="fas fa-file-export"></i> Export</button>
+        <button type="button" class="btn border btn-secondary float-end"><i class="fas fa-file-import"></i> Import</button>
+
+        <div class="row g-3">
+          <div class="col-auto">
+            <label>Student Names</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Search Students</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <label>Assignment Names</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Search Assignments</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-auto">
+            <button type="button" class="btn border btn-light"><i class="fas fa-filter"></i> Apply Filters</button>
+          </div>
+        </div>
+      
+      
         <table width="100%" border="1">
           <thead>
             <tr>
@@ -202,7 +211,10 @@
               <td><input placeholder="100"></td>
 
             </div>
+       
+          </div>
             </div>
+          </div>
   </div>
 
     </body>

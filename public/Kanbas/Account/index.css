@@ -56,6 +56,10 @@ ul.wd-kanbas-navigation .list-group-item.active {
     justify-content: left;
 }
 
+.fa-bars {
+    color:red;
+}
+
 .list-group-item.active {
     border-left: 1px black solid;
     background-color: white;

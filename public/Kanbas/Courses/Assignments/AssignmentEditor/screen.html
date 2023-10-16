@@ -12,7 +12,7 @@
 
 
 
-        <div class="col-1">
+   <div class="col-1">
     <ul class="wd-kanbas-navigation list-group">
       <li class="list-group-item">
        <i class="fab fa-neos"></i>
@@ -62,7 +62,19 @@
 
 
 
+<div class="col-11">
+  <div class="row">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><i class="fas fa-bars"></i> CS4450.12631.202410</a></li>
+        <li class="breadcrumb-item"><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
+        <li class="breadcrumb-item active" aria-current="page">A1 SETUP</li>
+      </ol>
+    </nav>
+    <hr>
+  </div>
 
+  <div class="row">
      <div class="col-3">
     <ul class="list-group">
       <li class="list-group-item">
@@ -126,133 +138,158 @@
 
 
   <div class="col">
-        <select>
-          <option>
-            SpeedGrader
-          </option>
+
+    <p class="float-end text-success"><i class="fas fa-check-circle float-left"></i> Published</p>
+    <hr />
+    <div class="aname">
+      <label for="assignment-input" class="form-label">Assignment Name</label>
+      <input type="name" class="form-control" id="assignment-input" placeholder="A1 - SETUP">
+    </div>
+    <div class="aname-2">
+      <label for="assignment-desc" class="form-label"></label>
+      <textarea class="form-control" id="assignment-desc" rows="3"></textarea>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-auto">
+        <label for="inputPoints" class="col-form-label">Points</label>
+      </div>
+      <div class="col-auto">
+        <input type="points" id="inputPoints" class="form-control" aria-describedby="pointHelpInline">
+      </div>
+    </div>
+  
+    <div class="row g-3">
+      <div class="col-auto">
+        <label>Assignment Group</label>
+        </div>
+        <div class="col-auto">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>ASSIGNMENTS</option>
         </select>
-        <hr>
+      </div>
+    </div>
+    
+    <div class="row g-3">
+      <div class="col-auto">
+        <label>Display Grade as</label>
+        </div>
+        <div class="col-auto">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Percentage</option>
+          </select>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Do not count this towards final grade
+            </label>
+          </div>
+        </div>
+        </div>
 
-        <h3>Assignment Name</h3>
-<form action="/Kanbas/Courses/Assignments/screen.html">
-  <input value="A1 - ENV + HTML" />
+            <div class="row g-3">
+              <div class="col-auto">
+                <label>Submission Type</label>
+                </div>
+              <div class="col-auto">
+            <div class="dropdown-center">
+              <p>Online Entry Options</p>
+              <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Online
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Text Entry
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Website URL
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Media Recordings
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Student Annotation
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                File Uploads
+              </label>
+            </div>
+                </div>
+            </div>
 
-  <br />
-  <textarea cols="20" rows="2">
-    This is the description of the assignment
-</textarea
-  >
-  <br />
-  <label for="points">Points</label>
-  <br />
-  <input id="points" max="100" min="50" step="5" type="number" value="100" />
-  <br />
-  <br />
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <label>Assign</label>
+                    </div>
+                    <div class="col-auto">
+                      <div class="assignto">
+                        <label for="assign-input" class="form-label">Assign To</label>
+                        <input type="name" class="form-control" id="assign-input" placeholder="Everyone">
+                      </div>
+                      <div class="row">
+                       
+                        <div class="dueDate">
+                          <label for="duedate-input" class="form-label">Due</label>
+                          <input type="date" class="form-control" id="duedate-input">
+                        </div>
+                      </div>
+                      <div class="row">
+                       <div class="col">
+                        <div class="dueDate">
+                          <label for="duedate-input" class="form-label">Available From</label>
+                          <input type="date" class="form-control" id="duedate-input">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="dueDate">
+                          <label for="duedate-input" class="form-label">Until</label>
+                          <input type="date" class="form-control" id="duedate-input">
+                        </div>
+                      </div>
+        
+                      </div>
+                </div>
+                <div class="row">
+                 
+                <button type="button" class="btn btn-secondary addbtn">Add</button>
+                <hr/>
+                </div>
 
-  Assignment Group
-  <br />
-  <select>
-    <option>
-      ASSIGNMENTS
-    </option>
-  </select>
-  <br />
-  <br />
-
-  Display Grade as
-  <br />
-  <select>
-    <option>
-      Percentage
-    </option>
-  </select>
-  <br />
-  <br />
-
-  Submission Type
-  <br />
-  <select>
-    <option>
-      Online
-  </select>
-  <br />
-  <br />
-
-  Online Entry Options
-  <br />
-  <input id="text-entry" type="checkbox" />
-  <label for="text-entry">Text Entry</label>
-  <br />
-  <label> <input type="checkbox" /> Website URL </label>
-  <br />
-  <input type="checkbox" checked /> Media Recordings<br />
-  <input type="checkbox" /> Student Annotation<br />
-  <input type="checkbox" /> File Uploads
-  <br />
-  <br />
-
-  Submission Attempts
-  <br />
-  <select>
-    <option>
-      Unlimited
-    </option>
-  </select>
-  <br />
-  <br />
-
-  Plagiarism Review
-  <br />
-  <select>
-    <option>
-      None
-    </option>
-  </select>
-  <br />
-  <br />
-
-  Group Assignment
-  <br />
-  <input id="text-entry" type="checkbox" />
-  <label for="text-entry">This is a group assignment</label>
-  <br />
-  <br />
-
-  Peer Reviews
-  <br />
-  <input id="text-entry" type="checkbox" />
-  <label for="text-entry">This is a group assignment</label>
-  <br />
-  <br />
-
-  Assign to
-  <br />
-  <input placeholder="Everyone">
-  <br />
-  <br />
-
-  Due
-  <br />
-  <input type="date">
-  <br />
-  <br />
-
-  Available From
-  <br />
-  <input type="date">
-  <br />
-  <br />
-
-  Until
-  <br />
-  <input type="date">
-  <br />
-  <br />
-
-  <button>Cancel</button>
-  <button>Save</a></button>
+                <div class="row cancel-save">
+                  
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Notify users that this content has changed
+                      </label>
+                    </div>
+                    <button type="button" class="btn border btn-danger float-end">Save</button>
+                    <button type="button" class="btn btn-light float-end">Cancel</button>
+                  </div>
+              </div>
+                </div>
 </div>
 
+</div>
+</div>
 </div>
 </div>
 

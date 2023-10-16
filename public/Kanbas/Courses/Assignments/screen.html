@@ -13,7 +13,6 @@
 <div class="container">
     <div class="row">
         <div class="col-1">
-  
 <ul class="wd-kanbas-navigation list-group  ">
     <li class="list-group-item">
      <i class="fab fa-neos"></i>
@@ -59,8 +58,21 @@
     </div>
     </li>
   </ul>
-        </div>
-        <div class="col-3">
+</div>
+
+    <div class="col-11">
+        <div class="row">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-bars"></i> CS4450.12631.202410</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                  </ol>
+                </nav>
+                <hr>
+              </div>
+
+    <div class="row">
+<div class="col-3">
   <ul class="list-group">
     <li class="list-group-item">
       <a href="/Kanbas/Courses/Home/index.html">Home</a>
@@ -119,209 +131,112 @@
   </ul>
 </div>
  
-<div class="col">
-                <input placeholder="Search for Assignments">
-                <button>Group</button>
-                <button>Assignment</button>
-                <select>
-                    <option>
-                        Edit Assignment Dates
-                </select>
+<div class="col-8">
+    <div class="row p-2">
+        <div class="col">
+                <input type="text" placeholder="Search for Assignments" style="width: 200px;">
+            </div>
+            <div class="col">
+                <div class="float-end">
+                <button class="btn btn-secondary">Group</button>
+                <button class="btn btn-danger"><i class="fas fa-plus"></i> Assignment</button>
+            </div>
+        </div>
 
-                <h2>ASSIGNMENTS 40% of Total 
-                    <select>
-                        <option>
-                            Edit
-                        </option>
-                        <option>
-                            Speed Grader
-                        </option>
-                        <option>
-                            Duplicate
-                        </option>
-                        <option>
-                            Delete
-                        </option>
-                        <option>
-                            Move to...
-                        </option>
-                        <option>
-                            Send to...
-                        </option>
-                        <option>
-                            Copy to...
-                        </option>
-                        <option>
-                            Share to Commons
-                        </option>
-                    </select>
-                </h2>
-                <ul>
-                   <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
-                       A1 - ENV + HTML 
-                       <br />
-                       Multiple Modules
-                   </a> | Not available yet</li>
-                   <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
-                    A2 - CSS + BOOTSTRAP 
-                    <br />
-                    Multiple Modules
-                </a> | Not available yet</li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
-                    A3 - JS + REACT 
-                    <br />
-                    Multiple Modules
-                </a> | Not available yet</li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
-                    A4 - STATE + REDUX 
-                    <br />
-                    Multiple Modules
-                </a> | Not available</li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
-                    A5 - NODE + SESSION 
-                    <br />
-                    Multiple Modules
-                </a> | Not available yet</li>
-                <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
-                    A6 - MONGO + MONGOOSE 
-                    <br />
-                    Multiple Modules
-                </a> | Not available yet</li>
-                </ul>
+        </div>
 
-                <h2>QUIZZES 10% of Total 
-                    <select>
-                        <option>
-                            Edit
-                        </option>
-                        <option>
-                            Speed Grader
-                        </option>
-                        <option>
-                            Duplicate
-                        </option>
-                        <option>
-                            Delete
-                        </option>
-                        <option>
-                            Move to...
-                        </option>
-                        <option>
-                            Send to...
-                        </option>
-                        <option>
-                            Copy to...
-                        </option>
-                        <option>
-                            Share to Commons
-                        </option>
-                    </select>
-                </h2>
-                <ul>
-                    <li><a href="#">
+        <div class="row">
+                <ul class="list-group assignmentlist">
+                <ul class="list-group">
+
+                <li class="list-group-item bg-secondary">ASSIGNMENTS 40% of Total </li>
+
+                   <li class="list-group-item"><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
+                       A1 SETUP
+                       <p>Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module |</p>
+                   </a> <i class="fa-solid fa-circle-check"></i><p>Due Sep 18, 2022 at 11:59pm | 100 pts</p></li>
+
+                   <li class="list-group-item"><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
+                    A2 HTML
+                    <p>Week 1 - HTML - Week Startig on Monday September 12th (9/12/2022) Module |</p>
+                </a> <p>Due Sep 25, 2022 at 11:59pm | 100 pts</p></li>
+
+                <li class="list-group-item"><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
+                    A3 CSS
+                    <p>Week 2 - CSS - Week Starting on Monday September 19th (9/19/2022) Module |</p>
+                </a> <p>Due Oct 2, 2022 at 11:59pm | 100 pts</p></li>
+
+                <li class="list-group-item"><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
+                    A4 BOOTSTRAP
+                    <p>Week 3 - Bootstrap - Week Starting MOnday September 26th (9/26/2022) Module |</p>
+                </a> <p>Due Oct 10, 2022 at 11:59pm | 100 pts</p></li>
+
+                <li class="list-group-item"><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
+                    A5 - JAVASCRIPT
+                    <p>Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module |</p>
+                </a> <p>Due Oct 10, 2022 at 11:59pm | 100 pts</p></li>
+
+                <li class="list-group-item"><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">
+                    A6 - REACT 
+                    <p>Week 5 - React & Routing - Week starting Monday October 10th (10/10/2022) Module |</p>
+                </a> <p>Due Oct 23, 2022 at 11:59pm | 100 pts</p></li>
+            </ul>
+            
+                <ul class="list-group quizlist">
+                <li class="list-group-item bg-secondary">QUIZZES 10% of Total</li>
+
+                    <li class="list-group-item"><a href="#">
                         Q1 - HTML
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
-                    <li><a href="#">
+                    <li class="list-group-item"><a href="#">
                         Q2 - CSS
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
-                    <li><a href="#">
+                    <li class="list-group-item"><a href="#">
                         Q3 - JS, ES6 
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
-                    <li><a href="#">
+                    <li class="list-group-item"><a href="#">
                         Q4 - NODE
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
-                    <li><a href="#">
+                    <li class="list-group-item"><a href="#">
                         Q5 - MONGO
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
                 </ul>
 
-                <h2>EXAMS 20% of Total
-                    <select>
-                        <option>
-                            Edit
-                        </option>
-                        <option>
-                            Speed Grader
-                        </option>
-                        <option>
-                            Duplicate
-                        </option>
-                        <option>
-                            Delete
-                        </option>
-                        <option>
-                            Move to...
-                        </option>
-                        <option>
-                            Send to...
-                        </option>
-                        <option>
-                            Copy to...
-                        </option>
-                        <option>
-                            Share to Commons
-                        </option>
-                    </select>
-                </h2>
-                <ul>
-                    <li><a href="#">Midterm
+                <li class="list-group-item bg-secondary examlist">EXAMS 20% of Total</li>
+                    <li class="list-group-item"><a href="#">Midterm
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
-                    <li><a href="#">Final
+                    <li class="list-group-item"><a href="#">Final
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
-                </ul>
+            
 
-                <h2>PROJECT 30% of Total
-                    <select>
-                        <option>
-                            Edit
-                        </option>
-                        <option>
-                            Speed Grader
-                        </option>
-                        <option>
-                            Duplicate
-                        </option>
-                        <option>
-                            Delete
-                        </option>
-                        <option>
-                            Move to...
-                        </option>
-                        <option>
-                            Send to...
-                        </option>
-                        <option>
-                            Copy to...
-                        </option>
-                        <option>
-                            Share to Commons
-                        </option>
-                    </select>
-                </h2>
-                <ul>
-                    <li><a href="#">Project
+                <li class="list-group-item bg-secondary projectlist">PROJECT 30% of Total</li>
+                    
+                    <li class="list-group-item"><a href="#">Project
                         <br />
                         Multiple Modules
                     </a> | Not available yet</li>
                 </ul>
+            </ul>
             </div>
-
-
+        </div>
+    </ul>
+        </div>
     </div>
+</div>
 </div>
 
 </body>
