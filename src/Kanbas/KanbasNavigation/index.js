@@ -1,9 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
+import "./index.css";
+
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar"];
   const { pathname } = useLocation();
   return (
-    <div className="list-group" style={{ width: 150 }}>
+    <div className="wd-kanbas-navigation list-group" style={{ width: 150 }}>
       {links.map((link, index) => (
         <Link
           key={index}
