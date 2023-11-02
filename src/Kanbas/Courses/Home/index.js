@@ -3,10 +3,14 @@ import ModuleList from "../Modules/ModuleList";
 
 function Home() {
   return (
-    <div>
+    <div className="row">
+    <div className="col-10">
       <h2>Home</h2>
       <ModuleList />
-      <h2>Status</h2>
+    </div>
+    <div className="col-2">
+    <h2>Status</h2>
+    </div>
     </div>
   );
 }
