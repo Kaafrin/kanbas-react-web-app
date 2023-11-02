@@ -1,35 +1,32 @@
 import React from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
-
-
+import { Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 function AssignmentEditor() {
-  const { assignmentId } = useParams();
-  const assignment = db.assignments.find(
-    (assignment) => assignment._id === assignmentId);
-
-
-  const { courseId } = useParams();
+  const { assignmentId, courseId } = useParams();
+  const assignment = db.assignments.find((a) => a._id === assignmentId);
   const navigate = useNavigate();
   const handleSave = () => {
-    console.log("Actually saving assignment TBD in later assignments");
+    console.log("Actually save the assignment TBD");
+    // go back to assignments
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
     <div>
-      <h2>Assignment Name</h2>
-      <input value={assignment.title}
-             className="form-control mb-2" />
-      <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
-        Cancel
-      </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
+      <h1>Assignment Editor!!! {assignment.title}</h1>
+      <input className="form-control" defaultValue={assignment.title} />
+      <button onClick={handleSave} className="btn btn-success">
         Save
       </button>
+      <Link
+        className="btn btn-secondary"
+        to={`/Kanbas/Courses/${courseId}/Assignments`}
+      >
+        Cancel
+      </Link>
+      <button className="btn btn-danger">Delete</button>
     </div>
   );
 }
-
 
 export default AssignmentEditor;
