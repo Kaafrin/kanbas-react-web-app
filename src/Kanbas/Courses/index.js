@@ -1,47 +1,39 @@
-import React from "react";
-import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
-//import JsonPre from "../../Labs/a3/JsonPre";
-import db from "../Database";
+import { useParams } from "react-router";
 import CourseNavigation from "./CourseNavigation";
+import db from "../Database";
+import { Routes, Route } from "react-router-dom";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
-import Grades from "./Grades";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  // const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1>Courses {course.name} / {screen}</h1>
+      <h1>Courses {course.name}</h1>
       <div className="row">
         <div className="col">
-        <CourseNavigation />
+          <CourseNavigation />
         </div>
         <div className="col">
-        <div>
-        <div
-          
-        >
           <Routes>
-            <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home/>} />
-            <Route path="Modules" element={<Modules/>} />
-            <Route path="Assignments" element={<Assignments/>} />
+            <Route path="Home" element={<Home />} />
+            <Route path="Modules" element={<Modules />} />
+            <Route path="Assignments" element={<Assignments />} />
             <Route
               path="Assignments/:assignmentId"
-              element={<AssignmentEditor/>}
+              element={<AssignmentEditor />}
             />
-           <Route path="Grades" element={<Grades/>} />
+            <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>
       </div>
-        </div>
-      </div>
-
+      {/* <pre>
+        <code>{JSON.stringify(db.courses, null, 2)}</code>
+      </pre> */}
     </div>
   );
 }
