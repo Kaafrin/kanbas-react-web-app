@@ -1,4 +1,5 @@
 import EncodingParametersInURLs from "./EncodingParametersInURLs";
+import WorkingWithArrays from "./WorkingWithArrays";
 import WorkingWithObjects from "./WorkingWithObjects";
 
 function Assignment5() {
@@ -7,6 +8,7 @@ function Assignment5() {
         <h1>Assignment 5</h1>
         <EncodingParametersInURLs/>
         <WorkingWithObjects/>
+        <WorkingWithArrays/>
         <div className="list-group">
         <a href="http://localhost:4000/a5/welcome"
            className="list-group-item">
